@@ -1,0 +1,105 @@
+.price {
+  padding-bottom: 150px;
+
+  &__content {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__content h2 {
+    font-weight: 700;
+    font-size: 34px;
+    color: $color-text-gray;
+  }
+  &__content p {
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-text-gray;
+  }
+  &__content-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+  }
+  &__content-list-item {
+    width: 323px;
+    height: 456px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px #00000040;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  &__bggreen {
+    background: $color-green;
+    color: $color-white;
+  }
+  &__content-list-item h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: $color-text-gray;
+    padding-bottom: 8px;
+  }
+  &__bggreen h3 {
+    color: $color-white;
+  }
+  &__content-list-item p {
+    font-size: 16px;
+    line-height: 40px;
+    color: $color-text-gray;
+    padding-bottom: 16px;
+  }
+  &__bggreen p {
+    color: $color-white;
+  }
+  &__content-list-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 38px;
+  }
+  &__content-list-item ul li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: $color-text-gray;
+  }
+  &__bggreen ul li {
+    color: $color-white;
+  }
+  &__content-list-item button {
+    width: 160px;
+    height: 44px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: $color-button-color;
+    color: $color-white;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  &__content-list-item button:hover {
+    cursor: pointer;
+    background: $color-white;
+    color: $color-button-color;
+    border: 1px solid $color-button-color;
+    box-shadow: 0px 0px 20px 3px $color-button-color;
+  }
+  &__bggreen button {
+    background: $color-white;
+    color: $color-button-color;
+  }
+  &__bggreen button:hover {
+    background: $color-white;
+    color: $color-button-color;
+    border: 1px solid $color-button-color;
+    box-shadow: 0px 0px 20px 3px $color-white;
+  }
+}

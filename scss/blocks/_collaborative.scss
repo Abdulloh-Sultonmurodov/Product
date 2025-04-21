@@ -1,0 +1,30 @@
+.collaborative {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
+
+  &__content {
+    max-width: 486px;
+  }
+
+  &__content strong {
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-text-gray;
+    padding-bottom: 12px;
+  }
+
+  &__content h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: $color-text-gray;
+    padding-bottom: 23px;
+  }
+
+  &__content p {
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-text-gray;
+    padding-bottom: 30px;
+  }
+}

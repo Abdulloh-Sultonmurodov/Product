@@ -1,0 +1,63 @@
+.top {
+  height: 556px;
+  padding-top: 25px;
+  display: flex;
+
+  &__title {
+    max-width: 458px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title h2 {
+    max-width: 420px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: $color-text-gray;
+  }
+
+  &__title p {
+    margin-top: 18px;
+    margin-bottom: 45px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $color-text-gray;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__btns button {
+    width: 175px;
+    height: 53px;
+    border-radius: 4px;
+    border: none;
+    background: $color-button-color;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+
+  &__btns button:hover {
+    cursor: pointer;
+    background: $color-white;
+    color: $color-button-color;
+    border: 1px solid $color-button-color;
+    box-shadow: 0px 0px 20px 3px $color-button-color;
+  }
+
+  &__btns a {
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-button-color;
+    display: flex;
+    gap: 9px;
+  }
+}

@@ -1,0 +1,79 @@
+.footer-wrapper p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer {
+  width: 1109px;
+  height: 205px;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo a {
+    display: flex;
+    gap: 16px;
+  }
+  &__logo h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    color: $color-text-gray;
+  }
+  &__socials {
+    margin-top: 25px;
+    display: flex;
+    gap: 16px;
+  }
+  &__secondpart a,
+  &__thirdpart a {
+    padding-bottom: 15px;
+  }
+  &__secondpart a strong,
+  &__thirdpart a strong {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-text-gray;
+  }
+  &__secondpart ul li a,
+  &__thirdpart ul li a {
+    font-size: 16px;
+    line-height: 35px;
+    color: $color-text-gray;
+  }
+  &__input p {
+    width: 280px;
+    height: 57px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-text-gray;
+  }
+  &__input form input {
+    width: 325px;
+    height: 48px;
+    margin: 34px 0 21px 0;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    box-shadow: 0px 1px 2px 0px #00000040;
+  }
+  &__input button {
+    width: 140px;
+    height: 39px;
+    padding: 8px 15px 7px 15px;
+    border-radius: 4px;
+    border: none;
+    background: $color-button-color;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  &__input button:hover {
+    cursor: pointer;
+    background: $color-white;
+    color: $color-button-color;
+    border: 1px solid $color-button-color;
+    box-shadow: 0px 0px 20px 3px $color-button-color;
+  }
+}

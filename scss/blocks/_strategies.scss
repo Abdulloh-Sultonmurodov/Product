@@ -1,0 +1,43 @@
+.strategies {
+    padding: 150px 0 230px 0;
+
+    &__content h2 {
+        font-weight: 700;
+        font-size: 34px;
+        color: $color-text-gray;
+        padding-bottom: 8px;
+    }
+    &__content p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $color-text-gray;
+        padding-bottom: 33px;
+    }
+
+    &__content-list ul {
+        display: flex;
+        gap: 32px;
+    }
+    &__content-list li {
+        border-radius: 8px;
+        border: 1px solid #DEDEDE
+    }
+
+    &__content-list h3:hover {
+        color: $color-button-color;
+    }
+    &__content-list li p {
+        padding: 24px 0px 0px 24px;
+        font-size: 16px;
+        line-height: 28px;
+        color: $color-text-gray;
+    }
+    &__content-list li h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+        color: $color-text-gray;
+        padding: 12px 0px 40px 24px;
+    }
+}

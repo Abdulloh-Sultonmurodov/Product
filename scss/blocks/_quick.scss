@@ -1,0 +1,82 @@
+.quick {
+  background-image: url(../../images/bg-quick-section.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 522px;
+
+  &__content-text {
+    padding-top: 53px;
+    text-align: center;
+  }
+  &__content-text h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: $color-text-gray;
+    margin-bottom: 16px;
+  }
+  &__content-text p {
+    max-width: 542px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-text-gray;
+    margin-bottom: 32px;
+    margin: 0 auto;
+  }
+
+  &__content-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  &__content-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__content-list-item div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__content-list-item div p {
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-text-gray;
+    padding: 20px 25px;
+    border-radius: 26.5px;
+    box-shadow: 0px 2px 8px 0px #5675921a;
+  }
+  &__content-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 150px;
+  }
+
+  &__btn {
+    width: 216px;
+    height: 53px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    border: none;
+    background: $color-button-color;
+    color: $color-white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+    background: $color-white;
+    color: $color-button-color;
+    border: 1px solid $color-button-color;
+    box-shadow: 0px 0px 20px 3px $color-button-color;
+  }
+}
