@@ -23,6 +23,7 @@
   &__nav-list {
     @include Display ($justify:start, $items:center);
     gap: 24px;
+
   }
 
   &__nav-list a {
@@ -77,8 +78,28 @@
     @include Font($fw:600, $fs:16px, $lh:100%, $ls:0px);
     transition: all 0.3s;
   }
+  &__btn-menu {
+    display: none;
+    background: transparent;
+    border: none;
+    @include Font($fw:600, $fs:16px, $lh:100%, $ls:0px);
+  }
   &__btn-mode:hover {
     cursor: pointer;
     color: $color-button-color;
+  }
+
+  @media (max-width:900px){
+    .header__nav-list {
+      display: none;
+    }
+  }
+  @media (max-width:510px) {
+    .header__btn-in, .header__btn-up, .header__btn-mode {
+      display: none;
+    }
+    .header__btn-menu {
+      display: block;
+    }
   }
 }

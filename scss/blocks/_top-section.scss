@@ -1,5 +1,5 @@
 .top {
-  height: 556px;
+  // height: 556px;
   padding-top: 25px;
   display: flex;
 
@@ -51,5 +51,34 @@
     color: $color-button-color;
     display: flex;
     gap: 9px;
+  }
+
+  &__image-img {
+    display: block;
+  }
+}
+.media-top {
+  display: none;
+}
+
+@media (max-width:1070px) {
+  .top {
+    flex-direction: column-reverse;
+  }
+  .top__image {
+    margin: 0 auto;
+  }
+  .top__title {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:510px) {
+  .media-top {
+    display: block;
+  }
+  .top__image-img {
+    display: none;
   }
 }
