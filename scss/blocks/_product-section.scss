@@ -9,20 +9,18 @@
   margin-top: 115px;
   height: 543px;
 
-  & h2 {
+  &__title {
     max-width: 535px;
     height: 96px;
     margin: 0 auto;
     text-align: center;
-    font-size: 32px;
-    font-weight: 700;
+    @include Font($fw:700, $fs:32px, $lh:100%, $ls:0px);
     color: $color-text-gray;
   }
 
   &__list-nav {
     height: 204px;
-    display: flex;
-    justify-content: space-between;
+    @include Display ($justify:space-between, $items:start);
     margin-top: 50px;
     margin-bottom: 34px;
   }
@@ -35,14 +33,12 @@
   &__list-nav li h3 {
     padding-top: 30px;
     padding-bottom: 13px;
-    font-weight: 600;
-    font-size: 22px;
+    @include Font($fw:600, $fs:22px, $lh:100%, $ls:0px);
     color: $color-text-gray;
   }
 
   &__list-nav li p {
-    font-size: 16px;
-    line-height: 26px;
+    @include Font($fw:400, $fs:16px, $lh:26px, $ls:0px);
     color: $color-text-gray;
   }
 
@@ -58,8 +54,7 @@
     border: none;
     background: $color-button-color;
     color: $color-white;
-    font-weight: 700;
-    font-size: 16px;
+    @include Font($fw:700, $fs:16px, $lh:100%, $ls:0px);
     transition: all 0.3s;
   }
 

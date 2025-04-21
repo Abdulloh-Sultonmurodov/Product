@@ -13,9 +13,7 @@
   &__content h2 {
     width: 510px;
     height: 92px;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 151%;
+    @include Font($fw:600, $fs:32px, $lh:151%, $ls:0px);
     color: $color-white;
   }
   &__content button {
@@ -25,12 +23,10 @@
     margin-top: 98px;
     border-radius: 8px;
     border: none;
-    display: flex;
-    align-items: center;
+    @include Display ($justify:start, $items:center);
     background: $color-white;
     color: $color-button-color;
-    font-weight: 600;
-    font-size: 20px;
+    @include Font($fw:600, $fs:20px, $lh:100%, $ls:0px);
     transition: all 0.3s;
   }
   &__content button:hover {

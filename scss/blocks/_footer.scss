@@ -6,17 +6,14 @@
 .footer {
   width: 1109px;
   height: 205px;
-  display: flex;
-  justify-content: space-between;
+  @include Display ($justify:space-between, $items:start);
 
   &__logo a {
     display: flex;
     gap: 16px;
   }
   &__logo h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 28px;
+    @include Font($fw:700, $fs:30px, $lh:28px, $ls:0px);
     color: $color-text-gray;
   }
   &__socials {
@@ -30,23 +27,18 @@
   }
   &__secondpart a strong,
   &__thirdpart a strong {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    @include Font($fw:500, $fs:20px, $lh:30px, $ls:0px);
     color: $color-text-gray;
   }
   &__secondpart ul li a,
   &__thirdpart ul li a {
-    font-size: 16px;
-    line-height: 35px;
+    @include Font($fw:400, $fs:16px, $lh:35px, $ls:0px);
     color: $color-text-gray;
   }
   &__input p {
     width: 280px;
     height: 57px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    @include Font($fw:500, $fs:20px, $lh:30px, $ls:0px);
     color: $color-text-gray;
   }
   &__input form input {
@@ -65,8 +57,7 @@
     border: none;
     background: $color-button-color;
     color: $color-white;
-    font-weight: 700;
-    font-size: 16px;
+    @include Font($fw:700, $fs:16px, $lh:100%, $ls:0px);
     transition: all 0.3s;
   }
   &__input button:hover {

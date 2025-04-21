@@ -7,19 +7,15 @@
   }
 
   &__content h2 {
-    font-weight: 700;
-    font-size: 34px;
+    @include Font($fw:700, $fs:34px, $lh:100%, $ls:0px);
     color: $color-text-gray;
   }
   &__content p {
-    font-weight: 500;
-    font-size: 16px;
+    @include Font($fw:500, $fs:16px, $lh:100%, $ls:0px);
     color: $color-text-gray;
   }
   &__content-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include Display ($justify:space-between, $items:center);
     gap: 70px;
   }
   &__content-list-item {
@@ -36,9 +32,7 @@
     color: $color-white;
   }
   &__content-list-item h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 40px;
+    @include Font($fw:700, $fs:24px, $lh:40px, $ls:0px);
     color: $color-text-gray;
     padding-bottom: 8px;
   }
@@ -46,8 +40,7 @@
     color: $color-white;
   }
   &__content-list-item p {
-    font-size: 16px;
-    line-height: 40px;
+    @include Font($fw:400, $fs:16px, $lh:40px, $ls:0px);
     color: $color-text-gray;
     padding-bottom: 16px;
   }
@@ -61,10 +54,7 @@
     padding-bottom: 38px;
   }
   &__content-list-item ul li {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.2px;
+    @include Font($fw:500, $fs:16px, $lh:22px, $ls:0.2px);
     color: $color-text-gray;
   }
   &__bggreen ul li {
@@ -77,12 +67,10 @@
     border-radius: 8px;
     border: none;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    @include Display ($justify:start, $items:center);
     background: $color-button-color;
     color: $color-white;
-    font-weight: 600;
-    font-size: 18px;
+    @include Font($fw:600, $fs:18px, $lh:100%, $ls:0px);
     transition: all 0.3s;
   }
   &__content-list-item button:hover {

@@ -1,6 +1,5 @@
 .management {
-    display: flex;
-    justify-content: space-between;
+    @include Display ($justify:space-between, $items:start);
     padding: 150px 0;
 
     &__content {
@@ -9,29 +8,25 @@
     }
 
     &__content-text strong {
-       font-weight: 600;
-       font-size: 16px;
+        @include Font($fw:600, $fs:16px, $lh:100%, $ls:0px);
        color: $color-text-gray;
        padding-bottom: 8px;
     }
 
     &__content-text h2 {
-        font-weight: 700;
-        font-size: 32px;
+        @include Font($fw:700, $fs:32px, $lh:100%, $ls:0px);
         color: $color-text-gray;
         padding-bottom: 131px;
     }
 
     &__content-list strong {
-        font-weight: 600;
-        font-size: 16px;
+        @include Font($fw:600, $fs:16px, $lh:100%, $ls:0px);
         color: $color-text-gray;
         padding-bottom: 12px;
     }
 
     &__content-list p {
-        font-size: 16px;
-        line-height: 26px;
+        @include Font($fw:400, $fs:16px, $lh:26px, $ls:0px);
         color: $color-text-gray;
         padding-bottom: 25px;
     }

@@ -1,25 +1,21 @@
 .customer {
-    display: flex;
-    justify-content: space-between;
+    @include Display ($justify:space-between, $items:start);
     padding-bottom: 150px;
 
     &__content {
         max-width: 486px;
-        display: flex;
+        @include Display ($justify:center, $items:start);
         flex-direction: column;
-        justify-content: center;
     }
 
     &__content strong {
-        font-weight: 600;
-        font-size: 16px;
+        @include Font($fw:600, $fs:16px, $lh:100%, $ls:0px);
         color: $color-text-gray;
         padding-bottom: 8px;
     }
 
     &__content h2 {
-        font-weight: 700;
-        font-size: 32px;
+        @include Font($fw:700, $fs:32px, $lh:100%, $ls:0px);
         color: $color-text-gray;
         padding-bottom: 23px;
     }

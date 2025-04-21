@@ -5,32 +5,26 @@
 
   &__title {
     max-width: 458px;
-    display: flex;
+    @include Display ($justify:center, $items:start);
     flex-direction: column;
-    justify-content: center;
   }
 
   &__title h2 {
     max-width: 420px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
+    @include Font($fw:700, $fs:40px, $lh:60px, $ls:0px);
     color: $color-text-gray;
   }
 
   &__title p {
     margin-top: 18px;
     margin-bottom: 45px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
+    @include Font($fw:400, $fs:18px, $lh:28px, $ls:0px);
     color: $color-text-gray;
   }
 
   &__btns {
-    display: flex;
+    @include Display ($justify:start, $items:center);
     gap: 30px;
-    align-items: center;
   }
 
   &__btns button {
@@ -40,8 +34,7 @@
     border: none;
     background: $color-button-color;
     color: $color-white;
-    font-weight: 700;
-    font-size: 16px;
+    @include Font($fw:700, $fs:16px, $lh:100%, $ls:0px);
     transition: all 0.3s;
   }
 
@@ -54,8 +47,7 @@
   }
 
   &__btns a {
-    font-weight: 600;
-    font-size: 16px;
+    @include Font($fw:600, $fs:16px, $lh:100%, $ls:0px);
     color: $color-button-color;
     display: flex;
     gap: 9px;
